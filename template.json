@@ -1,0 +1,15 @@
+{
+    "name": "Lumen",
+    "dialect": "blade",
+    "description": "A friendly, light landing page for studios and consultancies \u2014 numbered services, big stats, a three-step process, and a case-study spotlight.",
+    "icon": "\ud83c\udf24\ufe0f",
+    "repo": "https://github.com/site-templates/landing-lumen",
+    "order": 8,
+    "category": "landing",
+    "theme": "light",
+    "accent": "#0d9488",
+    "pages": [
+        "Home",
+        "About"
+    ]
+}

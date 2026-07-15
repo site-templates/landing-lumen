@@ -1,0 +1,20 @@
+[
+    {
+        "order": 1,
+        "week": "Week 1",
+        "title": "We listen first",
+        "description": "Sit-alongs with your team, a look at your tools, and a baseline of where the hours really go. No slideware."
+    },
+    {
+        "order": 2,
+        "week": "Weeks 2–5",
+        "title": "We build in your world",
+        "description": "The pilot runs inside your actual helpdesk and docs — your data never leaves your accounts, and a human reviews every edge case."
+    },
+    {
+        "order": 3,
+        "week": "Week 6 onward",
+        "title": "You own the result",
+        "description": "Documentation, training, and dashboards hand the keys to your team. We stay on for tuning, not dependence."
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "order": 1,
+        "question": "Do we need a data team for this to work?",
+        "answer": "No. Most of our clients have no data team at all. If your knowledge lives in a helpdesk, a wiki, and a few hundred documents, that's enough to start."
+    },
+    {
+        "order": 2,
+        "question": "What does a pilot cost?",
+        "answer": "Pilots are a fixed $9,000, including the discovery. If the pilot doesn't beat the baseline we agreed on, you don't continue — and you keep everything we built."
+    },
+    {
+        "order": 3,
+        "question": "Will our customers know they're talking to AI?",
+        "answer": "Yes, always — we label assistants clearly and route anything sensitive or emotional to a person. Trust is the metric we refuse to trade."
+    },
+    {
+        "order": 4,
+        "question": "Which AI providers do you use?",
+        "answer": "Whichever fits your requirements for quality, cost, and data residency. We're vendor-neutral and we set things up so you can switch providers later without rebuilding."
+    },
+    {
+        "order": 5,
+        "question": "What happens to our data?",
+        "answer": "It stays in your accounts, under your access controls. We never pool client data, never train shared models on it, and we work under your DPA."
+    }
+]

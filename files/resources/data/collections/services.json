@@ -1,0 +1,22 @@
+[
+    {
+        "order": 1,
+        "title": "Map",
+        "description": "A two-week discovery across your support, sales, and ops workflows — ending with a ranked list of where AI actually pays off."
+    },
+    {
+        "order": 2,
+        "title": "Pilot",
+        "description": "One workflow, one assistant, four weeks. Built on your real tickets and documents, measured against your real baseline."
+    },
+    {
+        "order": 3,
+        "title": "Roll out",
+        "description": "The pilot that worked goes to the whole team — with training, guardrails, and a playbook your managers own."
+    },
+    {
+        "order": 4,
+        "title": "Tune",
+        "description": "Monthly reviews of quality, cost, and coverage. We keep the assistants sharp as your product and policies change."
+    }
+]
