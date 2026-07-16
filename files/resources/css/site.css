@@ -1,9 +1,61 @@
 /*
-    Custom CSS, inlined after Tailwind by @vite in the layout.
+    Custom CSS, inlined after Tailwind by @vite in the layout —
+    so it can use @theme, @utility and @variant.
 */
+
+@theme {
+    /*
+        The sticky header's scrolled edge: the hairline and the drop are one
+        box-shadow rather than a border plus a shadow, so nothing doubles up
+        on the edge and the whole thing fades in as a single property.
+    */
+    --shadow-header: 0 1px 0 0 rgb(15 35 29 / 0.04), 0 8px 16px -12px rgb(15 35 29 / 0.08);
+
+    /* The easing the animated pill buttons share — a soft, weighted glide. */
+    --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /*
+        The hero logo marquee. The track holds two identical logo groups,
+        so sliding one group's width (-50%) loops with no visible seam.
+    */
+    --animate-marquee: marquee 35s linear infinite;
+
+    @keyframes marquee {
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    /*
+        The hero image marquee columns — same two-group trick, vertically.
+        The down column runs from -50% back to 0, so it appears to sink,
+        and a touch slower than the up column for an organic feel.
+    */
+    --animate-marquee-up: marquee-up 45s linear infinite;
+    --animate-marquee-down: marquee-down 60s linear infinite;
+
+    @keyframes marquee-up {
+        to {
+            transform: translateY(-50%);
+        }
+    }
+
+    @keyframes marquee-down {
+        from {
+            transform: translateY(-50%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+}
 
 html {
     scroll-behavior: smooth;
+    /* Anchor links land below the sticky header instead of behind it. */
+    scroll-padding-top: --spacing(24);
+    /* Lets the FAQ answers animate their height to/from auto in supporting browsers. */
+    interpolate-size: allow-keywords;
 }
 
 body {
@@ -36,7 +88,7 @@ summary:focus-visible {
     color: #35705a;
 }
 
-/* Soft green wash behind the about hero. */
+/* Soft green wash behind the about and writings heroes. */
 .hero-wash {
     background:
         radial-gradient(720px 360px at 50% -10%, rgba(30, 64, 56, 0.08), transparent 70%),
@@ -72,20 +124,196 @@ summary:focus-visible {
     background-size: 100% 1px;
 }
 
-/* FAQ accordion — plus sign rotates into a cross when open. */
-details.faq summary {
+/* The FAQ accordion and the mobile menu are native <details> elements. */
+details.faq summary,
+details.menu summary {
     cursor: pointer;
     list-style: none;
 }
 
-details.faq summary::-webkit-details-marker {
+details.faq summary::-webkit-details-marker,
+details.menu summary::-webkit-details-marker {
     display: none;
 }
 
+/* FAQ accordion — plus sign rotates into a cross when open. */
 details.faq summary .faq-icon {
     transition: transform 0.25s ease;
 }
 
 details.faq[open] summary .faq-icon {
     transform: rotate(45deg);
+}
+
+/*
+    FAQ answers slide open and closed. Height-to-auto needs interpolate-size
+    (set on html above); browsers without it simply toggle instantly.
+*/
+details.faq::details-content {
+    opacity: 0;
+    block-size: 0;
+    overflow-y: clip;
+    transition:
+        content-visibility 0.3s allow-discrete,
+        opacity 0.3s ease,
+        block-size 0.3s ease;
+}
+
+details.faq[open]::details-content {
+    opacity: 1;
+    block-size: auto;
+}
+
+/*
+    Article body styles for /writings posts. The markup inside a post is plain
+    HTML, so it is styled here by element rather than with utility classes on
+    every tag. Width is not set here — add a max-w-[*ch] class next to `prose`
+    in the markup.
+*/
+@utility prose {
+    color: rgb(15 35 29 / 0.7);
+    font-size: var(--text-base);
+    line-height: --spacing(7);
+    text-wrap: pretty;
+
+    & > * + * {
+        margin-top: --spacing(6);
+    }
+
+    & h2 {
+        margin-top: --spacing(14);
+        color: #0f231d;
+        font-family: 'Instrument Serif', ui-serif, Georgia, serif;
+        font-size: var(--text-4xl);
+        font-weight: var(--font-weight-normal);
+        letter-spacing: var(--tracking-tight);
+        line-height: 1.2;
+        text-wrap: balance;
+    }
+
+    & h3 {
+        margin-top: --spacing(10);
+        color: #0f231d;
+        font-family: 'Instrument Serif', ui-serif, Georgia, serif;
+        font-size: var(--text-2xl);
+        font-weight: var(--font-weight-normal);
+        letter-spacing: var(--tracking-tight);
+        text-wrap: balance;
+    }
+
+    & h4,
+    & h5,
+    & h6 {
+        margin-top: --spacing(8);
+        color: #0f231d;
+        font-size: var(--text-base);
+        font-weight: var(--font-weight-medium);
+    }
+
+    & strong {
+        color: #0f231d;
+        font-weight: var(--font-weight-medium);
+    }
+
+    & a {
+        color: #0f231d;
+        font-weight: var(--font-weight-medium);
+        text-decoration: underline;
+        text-decoration-color: rgb(53 112 90 / 0.5);
+        text-underline-offset: 3px;
+
+        @variant hover {
+            text-decoration-color: #35705a;
+        }
+    }
+
+    & ul,
+    & ol {
+        padding-left: --spacing(5);
+    }
+
+    & ul {
+        list-style-type: disc;
+    }
+
+    & ol {
+        list-style-type: decimal;
+    }
+
+    & li::marker {
+        color: rgb(15 35 29 / 0.3);
+    }
+
+    & li + li {
+        margin-top: --spacing(2);
+    }
+
+    /* A lead paragraph — put class="lead" on the first <p> of a writing. */
+    & .lead {
+        color: rgb(15 35 29 / 0.75);
+        font-size: var(--text-lg);
+        line-height: --spacing(8);
+    }
+
+    & blockquote {
+        margin-top: --spacing(10);
+        margin-bottom: --spacing(10);
+        border-left: 2px solid #35705a;
+        padding-left: --spacing(6);
+        color: #0f231d;
+        font-family: 'Instrument Serif', ui-serif, Georgia, serif;
+        font-size: var(--text-2xl);
+        line-height: 1.45;
+        text-wrap: pretty;
+    }
+
+    & blockquote p {
+        margin-top: 0;
+    }
+
+    & img {
+        margin-top: --spacing(10);
+        margin-bottom: --spacing(10);
+        border-radius: var(--radius-2xl);
+        outline: 1px solid rgb(0 0 0 / 0.05);
+        outline-offset: -1px;
+    }
+
+    & pre {
+        margin-top: --spacing(8);
+        margin-bottom: --spacing(8);
+        border-radius: var(--radius-xl);
+        background-color: #f3f7f4;
+        padding: --spacing(5);
+        overflow-x: auto;
+        color: #0f231d;
+        font-size: var(--text-sm);
+        line-height: --spacing(6);
+    }
+
+    & code {
+        font-family: var(--font-mono);
+    }
+
+    & :not(pre) > code {
+        border-radius: var(--radius-md);
+        background-color: rgb(15 35 29 / 0.06);
+        padding: 0.125rem 0.375rem;
+        color: #0f231d;
+        font-size: 0.875em;
+    }
+
+    & pre code {
+        border-radius: 0;
+        background-color: transparent;
+        padding: 0;
+        color: inherit;
+        font-size: inherit;
+    }
+
+    & hr {
+        margin-top: --spacing(12);
+        margin-bottom: --spacing(12);
+        border-color: rgb(15 35 29 / 0.1);
+    }
 }

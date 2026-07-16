@@ -1,0 +1,58 @@
+[
+    {
+        "order": 1,
+        "title": "The Pilot Before the Platform",
+        "description": "Everyone wants to buy the platform. We keep talking clients into a six-week pilot instead — here's the reasoning, and the failure it protects you from.",
+        "category": "Playbook",
+        "date": "2026-07-08",
+        "dateFormatted": "Jul 8, 2026",
+        "readTime": "5 min read",
+        "author": "Alba Reyes",
+        "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop&crop=faces",
+        "link": "/writings/the-pilot-before-the-platform",
+        "image": "https://assets.ui.sh/wallpapers/landscapes.webp?variant=forest",
+        "alt": ""
+    },
+    {
+        "order": 2,
+        "title": "What a Good Baseline Looks Like",
+        "description": "You can't improve a number you never wrote down. The four measurements we take before any AI touches a workflow — and the one everyone forgets.",
+        "category": "Measurement",
+        "date": "2026-06-24",
+        "dateFormatted": "Jun 24, 2026",
+        "readTime": "6 min read",
+        "author": "Priya Nair",
+        "authorImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&auto=format&fit=crop&crop=faces",
+        "link": "/writings/what-a-good-baseline-looks-like",
+        "image": "https://assets.ui.sh/wallpapers/landscapes.webp?variant=valley",
+        "alt": ""
+    },
+    {
+        "order": 3,
+        "title": "Humans in the Loop, Without the Drag",
+        "description": "Review-everything policies quietly die within a month. How to keep people in charge of the judgment calls without turning them into rubber stamps.",
+        "category": "Operations",
+        "date": "2026-06-02",
+        "dateFormatted": "Jun 2, 2026",
+        "readTime": "4 min read",
+        "author": "Marcus Cole",
+        "authorImage": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&auto=format&fit=crop&crop=faces",
+        "link": "/writings/humans-in-the-loop-without-the-drag",
+        "image": "https://assets.ui.sh/wallpapers/landscapes.webp?variant=meadow",
+        "alt": ""
+    },
+    {
+        "order": 4,
+        "title": "The Honest Math of an AI Assistant",
+        "description": "Vendors quote the license. Nobody quotes the review time, the escalations, or the maintenance. The full cost model we walk every client through.",
+        "category": "Pricing",
+        "date": "2026-05-12",
+        "dateFormatted": "May 12, 2026",
+        "readTime": "7 min read",
+        "author": "Theo Lindgren",
+        "authorImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&auto=format&fit=crop&crop=faces",
+        "link": "/writings/the-honest-math-of-an-ai-assistant",
+        "image": "https://assets.ui.sh/wallpapers/landscapes.webp?variant=limestone-karst",
+        "alt": ""
+    }
+]

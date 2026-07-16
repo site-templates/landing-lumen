@@ -1,22 +1,31 @@
 <!-- Global footer with the closing CTA. Rendered on every page by the layout. -->
-<footer class="pt-12">
-    <div class="mx-auto max-w-7xl px-6 pb-12">
-        <div class="rounded-4xl bg-[#1e4038] px-8 py-20 text-center sm:px-16 sm:py-28">
-            <h2 class="font-display mx-auto max-w-[24ch] text-balance text-5xl tracking-tight text-white sm:text-6xl">Thirty minutes. Your workflows. <span class="italic">Honest</span> advice.</h2>
-            <p class="mx-auto mt-6 max-w-[48ch] text-pretty text-lg text-white/70">If AI isn't the right answer for your team yet, we'll say so — and tell you what to do instead.</p>
-            <div class="mt-10 flex justify-center">
-                <a href="mailto:hello@example.com" class="group flex items-center gap-3 rounded-full bg-white py-2 pr-2 pl-5 text-sm font-medium text-[#0f231d] active:scale-[0.98]">
-                    Book your call
-                    <span class="grid size-8 shrink-0 place-items-center rounded-full bg-[#1e4038] text-white">
-                        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 transition-transform group-hover:translate-x-0.5">
-                            <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd"/>
-                        </svg>
-                    </span>
-                </a>
+<footer>
+    <!-- Near-full-bleed closing CTA band, framed by a slim white gutter; the content stays in the page container so it aligns with the nav. -->
+    <div class="px-6">
+        <div class="rounded-2xl bg-[#1e4038]">
+            <div class="mx-auto max-w-7xl px-6 py-20 text-center sm:py-28">
+                <h2 class="font-display mx-auto max-w-[24ch] text-balance text-5xl tracking-tight text-white sm:text-6xl">Thirty minutes. Your workflows. <span class="italic">Honest</span> advice.</h2>
+                <p class="mx-auto mt-6 max-w-[48ch] text-pretty text-lg text-white/70">If AI isn't the right answer for your team yet, we'll say so — and tell you what to do instead.</p>
+                <div class="mt-10 flex justify-center">
+    <!-- On hover the two tones swap and the arrow flies out of the circle, returning from the left. -->
+                    <a href="mailto:hello@example.com" class="group flex items-center gap-3 rounded-full bg-white py-2 pr-2 pl-5 text-sm font-medium text-[#0f231d] inset-ring inset-ring-transparent transition-colors duration-300 hover:bg-[#1e4038] hover:text-white hover:inset-ring-white/30 active:scale-[0.98]">
+                        Book your call
+                        <span class="grid size-8 shrink-0 place-items-center overflow-hidden rounded-full bg-[#1e4038] text-white transition-colors duration-300 group-hover:bg-white group-hover:text-[#1e4038]">
+                            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="ease-soft col-start-1 row-start-1 size-4 shrink-0 transition-transform duration-350 group-hover:translate-x-[150%]">
+                                <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd"/>
+                            </svg>
+                            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="ease-soft col-start-1 row-start-1 size-4 shrink-0 -translate-x-[150%] transition-transform duration-350 group-hover:translate-x-0">
+                                <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="mt-14 flex flex-col gap-6 text-sm text-[#0f231d]/50 sm:flex-row sm:items-center sm:justify-between">
+    <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-col gap-6 py-12 text-sm text-[#0f231d]/50 sm:flex-row sm:items-center sm:justify-between">
             <div class="flex items-center gap-3">
                 <a href="/" aria-label="Homepage    ">
                     <svg class="h-6 -translate-y-px w-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.9 44"><path d="M1.6 40.6c1.9-.2 3.1-.6 3.1-2.8V7.4c0-2-1-2.5-2.8-2.6l-.1-.3 7.6-2.7h.2v34c0 3.6 1.1 5.4 4.6 5.6v.3H1.6zM46.5 40.7v.3h-4.3l-4.4.4h-.3v-4.2c-1.8 2.2-4.5 4.4-9.6 4.4s-8.7-2.2-8.7-8.3V22.6c0-2.2-.7-3-2.9-3.1v-.4l7.6-1.8h.1v15.2c0 4.6 2.5 6.8 6.9 6.8 2.5 0 4.7-.9 6.9-2.9V22.2c0-2-.6-2.8-2.9-2.9V19l7.6-1.7h.2V36c0 3.3 1.4 4.4 3.8 4.6zM97.3 40.6v.4h-11v-.4c2.4-.2 3-1 3-3V26.4c0-4.3-1.8-6.9-6.2-6.9-2.6 0-4.9 1.5-6.5 3.8v14.3c0 2.1.6 2.9 3 3v.4H69v-.4c2.4-.2 2.8-1 2.9-3V26.4c0-4.3-1.9-6.9-5.8-6.9-2.4 0-4.8.9-7.2 3.6v14.5c0 2.1.6 2.9 3.1 3v.4H50.6v-.4c2.5-.2 3.3-.9 3.3-3V23.2c0-2.1-.7-2.9-3.1-2.9l-.1-.2 8.1-2.8h.1v4.9h.1c3.3-3.2 6.2-5.1 10.1-5.1 4.1 0 6.7 1.9 7.3 5.3 2.7-2.7 5.9-5.3 10.1-5.3 4.4 0 7.8 2.2 7.8 8.3v12.2c0 2.1.6 2.9 3 3M105.6 27.1c-.2 6.6 3.7 11.8 10.7 11.8 3.2 0 6.3-1.1 8.6-4.3h.1c-.9 4.2-4.6 7-11 7-7.6 0-12.8-4.8-12.8-11.8 0-6 4.4-12.7 12.9-12.7 6 0 11 2.9 11 9.8l-.2.2zm.1-1H120c.1-.2.1-.7.1-1.3 0-3.7-2.4-6.9-6.5-6.8-4.6.1-7.5 3.5-7.9 8.1M157.3 40.6v.4H147v-.4c2.3-.2 3-1 3-3V27.1c0-4.5-1.7-7.6-6-7.6-2.1 0-4.6.7-6.7 3.5v14.6c0 2.1.7 2.9 2.8 3v.4h-11.3v-.4c2.3-.2 3.3-.9 3.3-3V23.2c0-2.1-.7-2.9-3.2-2.9v-.2l8.1-2.9.2.1V22h.2c2.1-2.4 5.3-4.9 9.6-4.9 4.4 0 7.7 2.3 7.7 8.4v12.1c0 2.1.3 2.8 2.6 3" /></svg>
@@ -26,6 +35,7 @@
             <div class="flex flex-wrap items-center gap-6 font-normal">
                 <a href="/#services" class="hover-line hover:text-[#0f231d]">Services</a>
                 <a href="/#results" class="hover-line hover:text-[#0f231d]">Results</a>
+                <a href="/writings" class="hover-line hover:text-[#0f231d]">Writings</a>
                 <a href="/about" class="hover-line hover:text-[#0f231d]">About</a>
                 <a href="mailto:hello@example.com" class="hover-line hover:text-[#0f231d]">hello@example.com</a>
             </div>

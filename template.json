@@ -1,7 +1,7 @@
 {
     "name": "Lumen",
     "dialect": "blade",
-    "description": "A polished, deep-green landing page for studios and consultancies \u2014 editorial serif headlines, numbered services, big stats, a three-step process, and a case-study spotlight.",
+    "description": "A polished, deep-green landing page for studios and consultancies \u2014 editorial serif headlines, numbered services, big stats, a case-study spotlight, and a Writings journal.",
     "icon": "\ud83c\udf24\ufe0f",
     "repo": "https://github.com/site-templates/landing-lumen",
     "order": 8,
@@ -10,6 +10,7 @@
     "accent": "#1e4038",
     "pages": [
         "Home",
-        "About"
+        "About",
+        "Writings"
     ]
 }
