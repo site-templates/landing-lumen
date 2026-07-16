@@ -3,12 +3,12 @@
 
     <section class="relative overflow-hidden">
         <div class="hero-wash pointer-events-none absolute inset-0"></div>
-        <div class="relative mx-auto max-w-6xl px-6 pt-24 pb-16 sm:pt-32">
+        <div class="relative mx-auto max-w-7xl px-6 pt-24 pb-16 sm:pt-32">
             <p class="fade-up eyebrow">About</p>
-            <h1 class="fade-up font-display mt-4 max-w-3xl text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl" style="animation-delay: .05s">
-                We're the calm ones in a <span class="text-[#0d9488]">loud</span> industry
+            <h1 class="fade-up font-display mt-4 max-w-[24ch] text-balance text-5xl tracking-tight [animation-delay:50ms] sm:text-6xl">
+                We're the calm ones in a <span class="italic">loud</span> industry
             </h1>
-            <p class="fade-up mt-6 max-w-xl text-lg leading-relaxed text-[#132420]/60" style="animation-delay: .1s">
+            <p class="fade-up mt-6 max-w-[56ch] text-pretty text-lg text-[#0f231d]/60 [animation-delay:100ms]">
                 Lumen started in 2025 after our founder spent a year watching her
                 support team demo tools that promised everything and shipped
                 confusion. We do the opposite: small pilots, real baselines, honest
@@ -18,43 +18,44 @@
     </section>
 
     <!-- ============ Beliefs ============ -->
-    <section class="mx-auto max-w-6xl px-6 py-16">
-        <div class="grid gap-5 md:grid-cols-3">
-            <div class="rounded-2xl border border-[#132420]/8 bg-white p-8 shadow-sm">
-                <span class="inline-flex rounded-full bg-teal-50 px-3 py-1 text-xs font-bold text-[#0d9488]">01</span>
-                <h2 class="font-display mt-5 text-lg font-bold">Measure before you automate</h2>
-                <p class="mt-2.5 text-sm leading-relaxed text-[#132420]/60">If you can't say what "better" means in numbers, you're not ready to buy AI — and we'll help you get ready instead of selling you some.</p>
-            </div>
-            <div class="rounded-2xl border border-[#132420]/8 bg-white p-8 shadow-sm">
-                <span class="inline-flex rounded-full bg-teal-50 px-3 py-1 text-xs font-bold text-[#0d9488]">02</span>
-                <h2 class="font-display mt-5 text-lg font-bold">People keep the judgment</h2>
-                <p class="mt-2.5 text-sm leading-relaxed text-[#132420]/60">Assistants draft, summarize, and route. Humans decide. Every deployment ships with clear escalation paths and a visible off switch.</p>
-            </div>
-            <div class="rounded-2xl border border-[#132420]/8 bg-white p-8 shadow-sm">
-                <span class="inline-flex rounded-full bg-teal-50 px-3 py-1 text-xs font-bold text-[#0d9488]">03</span>
-                <h2 class="font-display mt-5 text-lg font-bold">Leave teams stronger</h2>
-                <p class="mt-2.5 text-sm leading-relaxed text-[#132420]/60">Success is your team running the system without us. Documentation and training aren't add-ons; they're the deliverable.</p>
-            </div>
+    <section class="py-16">
+        <div class="mx-auto max-w-7xl px-6">
+            <dl class="grid gap-8 md:grid-cols-3">
+                <div class="rounded-2xl bg-[#f3f7f4] p-8">
+                    <p class="text-sm font-medium text-[#35705a] tabular-nums">01</p>
+                    <dt class="mt-8 text-lg font-semibold">Measure before you automate</dt>
+                    <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">If you can't say what "better" means in numbers, you're not ready to buy AI — and we'll help you get ready instead of selling you some.</dd>
+                </div>
+                <div class="rounded-2xl bg-[#f3f7f4] p-8">
+                    <p class="text-sm font-medium text-[#35705a] tabular-nums">02</p>
+                    <dt class="mt-8 text-lg font-semibold">People keep the judgment</dt>
+                    <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">Assistants draft, summarize, and route. Humans decide. Every deployment ships with clear escalation paths and a visible off switch.</dd>
+                </div>
+                <div class="rounded-2xl bg-[#f3f7f4] p-8">
+                    <p class="text-sm font-medium text-[#35705a] tabular-nums">03</p>
+                    <dt class="mt-8 text-lg font-semibold">Leave teams stronger</dt>
+                    <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">Success is your team running the system without us. Documentation and training aren't add-ons; they're the deliverable.</dd>
+                </div>
+            </dl>
         </div>
     </section>
 
     <!-- ============ Team ============ -->
-    <section class="border-t border-[#132420]/5 bg-white">
-        <div class="mx-auto max-w-6xl px-6 py-20">
-            <p class="eyebrow">The team</p>
-            <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                @foreach ($team as $member)
-                    <div class="group rounded-2xl border border-[#132420]/8 bg-[#fbfcfb] p-6 transition hover:-translate-y-1 hover:shadow-md">
-                        <!-- Portrait, tinted by the collection's color fields — swap in your own photos. -->
-                        <div class="relative h-28 overflow-hidden rounded-xl">
-                            <img src="{{ $member->image }}" alt="{{ $member->alt }}" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
-                            <span class="absolute inset-0 mix-blend-multiply opacity-25" style="background: linear-gradient(150deg, {{ $member->color_from }}, {{ $member->color_to }})"></span>
-                        </div>
-                        <h3 class="font-display mt-4 font-bold">{{ $member->name }}</h3>
-                        <p class="mt-1 text-xs text-[#132420]/50">{{ $member->role }}</p>
-                    </div>
-                @endforeach
+    <section class="py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div>
+                <p class="eyebrow">The team</p>
+                <h2 class="font-display mt-3 max-w-[30ch] text-balance text-5xl tracking-tight">The four of us</h2>
             </div>
+            <ul role="list" class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                @foreach ($team as $member)
+                    <li>
+                        <img src="{{ $member->image }}" alt="" class="aspect-4/5 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5" loading="lazy">
+                        <h3 class="mt-5 text-base font-semibold">{{ $member->name }}</h3>
+                        <p class="mt-1 text-sm text-[#0f231d]/50">{{ $member->role }}</p>
+                    </li>
+                @endforeach
+            </ul>
         </div>
     </section>
 

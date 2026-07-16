@@ -1,16 +1,24 @@
 <!-- Global nav. Rendered on every page by the layout. -->
-<header class="sticky top-0 z-50 border-b border-[#132420]/5 bg-[#fbfcfb]/85 backdrop-blur-md">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" class="font-display flex items-center gap-2 text-lg font-bold tracking-tight">
-            <span class="grid h-6 w-6 place-items-center rounded-lg bg-[#0d9488] text-xs text-white">&#9728;</span>
-            Lumen
+<header class="sticky top-0 z-50 border-b border-[#0f231d]/5 bg-white/85 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
+        <a href="/" aria-label="Homepage" class="shrink-0 flex items-center gap-1.5">
+            <x-logo />    
         </a>
-        <div class="flex items-center gap-6 text-sm font-medium text-[#132420]/60">
-            <a href="#services" class="hidden transition hover:text-[#132420] sm:block">Services</a>
-            <a href="#process" class="hidden transition hover:text-[#132420] sm:block">Process</a>
-            <a href="#results" class="hidden transition hover:text-[#132420] sm:block">Results</a>
-            <a href="/about" class="hidden transition hover:text-[#132420] sm:block">About</a>
-            <a href="mailto:hello@example.com" class="rounded-full bg-[#0d9488] px-4 py-2 font-semibold text-white transition hover:bg-teal-700 active:scale-[0.98]">Book a call</a>
+
+        <div class="flex items-center gap-8 text-sm font-medium text-[#0f231d]/60 max-sm:hidden">
+            <a href="/#services" class="hover:text-[#0f231d]">Services</a>
+            <a href="/#process" class="hover:text-[#0f231d]">Process</a>
+            <a href="/#results" class="hover:text-[#0f231d]">Results</a>
+            <a href="/about" class="hover:text-[#0f231d]">About</a>
         </div>
+
+        <a href="mailto:hello@example.com" class="group flex shrink-0 items-center gap-2.5 rounded-full bg-[#1e4038] py-1.5 pr-1.5 pl-4 text-sm font-medium text-white hover:bg-[#16302a] active:scale-[0.98]">
+            Book a call
+            <span class="grid size-6 shrink-0 place-items-center rounded-full bg-white text-[#1e4038]">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 transition-transform group-hover:translate-x-0.5">
+                    <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd"/>
+                </svg>
+            </span>
+        </a>
     </nav>
 </header>

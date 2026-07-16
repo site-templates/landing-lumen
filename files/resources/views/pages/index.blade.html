@@ -2,153 +2,206 @@
 <x-layouts.main title="Practical AI for teams with real work to do" description="Lumen helps support and operations teams put AI to work — one measured pilot at a time, with honest math and humans in the loop.">
 
     <!-- ============ Hero ============ -->
-    <section class="relative overflow-hidden">
-        <div class="hero-wash pointer-events-none absolute inset-0"></div>
-        <div class="relative mx-auto max-w-6xl px-6 pt-24 pb-16 text-center sm:pt-32">
-            <h1 class="fade-up font-display mx-auto max-w-3xl text-balance text-5xl font-bold leading-[1.05] tracking-tight sm:text-7xl">
-                AI that earns its <span class="text-[#0d9488]">keep</span>
-            </h1>
+    <!-- Deep-green panel inset on the white page. The image radius is derived from the panel radius minus its padding. -->
+    <section class="pt-4 sm:pt-6">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="fade-up overflow-hidden rounded-(--radius) bg-[#1e4038] p-(--p) [--p:--spacing(2.5)] [--radius:var(--radius-4xl)]">
+                <div class="grid gap-8 lg:grid-cols-2">
+                    <div class="flex flex-col justify-center p-6 pt-14 sm:p-12 lg:py-24 lg:pr-4 lg:pl-14">
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-1">
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 text-white"><path d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L8 12.347l-3.136 1.915a.75.75 0 0 1-1.12-.814l.853-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"/></svg>
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 text-white"><path d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L8 12.347l-3.136 1.915a.75.75 0 0 1-1.12-.814l.853-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"/></svg>
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 text-white"><path d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L8 12.347l-3.136 1.915a.75.75 0 0 1-1.12-.814l.853-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"/></svg>
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 text-white"><path d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L8 12.347l-3.136 1.915a.75.75 0 0 1-1.12-.814l.853-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"/></svg>
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 text-white"><path d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L8 12.347l-3.136 1.915a.75.75 0 0 1-1.12-.814l.853-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z"/></svg>
+                            </div>
+                            <p class="text-sm font-medium text-white/80">Rated 4.9/5 by client teams</p>
+                        </div>
 
-            <p class="fade-up mx-auto mt-6 max-w-xl text-lg leading-relaxed text-[#132420]/60" style="animation-delay: .05s">
-                Lumen helps support and operations teams put AI to work — one measured
-                pilot at a time. No moonshots, no jargon, and a human in the loop
-                wherever it matters.
-            </p>
+                        <h1 class="font-display mt-8 max-w-[20ch] text-balance text-6xl tracking-tight text-white sm:text-7xl">
+                            AI consulting that <span class="italic">earns its keep</span>
+                        </h1>
 
-            <div class="fade-up mt-10 flex items-center justify-center gap-3" style="animation-delay: .1s">
-                <a href="mailto:hello@example.com" class="rounded-full bg-[#0d9488] px-7 py-3 text-sm font-bold text-white transition hover:bg-teal-700 active:scale-[0.98]">Book a call</a>
-                <a href="#process" class="rounded-full border border-[#132420]/10 bg-white px-7 py-3 text-sm font-semibold text-[#132420]/70 transition hover:border-[#132420]/30 hover:text-[#132420] active:scale-[0.98]">How it works</a>
+                        <p class="mt-6 max-w-[48ch] text-pretty text-lg text-white/70">
+                            Lumen helps support and operations teams put AI to work — one
+                            measured pilot at a time. No moonshots, no jargon, and a human
+                            in the loop wherever it matters.
+                        </p>
+
+                        <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+                            <a href="mailto:hello@example.com" class="group flex items-center gap-3 rounded-full bg-white py-2 pr-2 pl-5 text-sm font-medium text-[#0f231d] active:scale-[0.98]">
+                                Book a call
+                                <span class="grid size-8 shrink-0 place-items-center rounded-full bg-[#1e4038] text-white">
+                                    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 transition-transform group-hover:translate-x-0.5">
+                                        <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#process" class="group flex items-center gap-2 text-sm font-medium text-white">
+                                See how it works
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="size-4 shrink-0 transition-transform group-hover:translate-x-0.5">
+                                    <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative min-h-80 sm:min-h-96 lg:min-h-[34rem]">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1400&auto=format&fit=crop" alt="Consultant in a navy blazer standing in a bright office" class="absolute inset-0 size-full rounded-[calc(var(--radius)-var(--p))] object-cover object-top">
+                        <!-- Soft green wash so any swapped-in photo sits in the panel's palette. -->
+                        <div class="pointer-events-none absolute inset-0 rounded-[calc(var(--radius)-var(--p))] bg-[#1e4038]/25 mix-blend-multiply" aria-hidden="true"></div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <p class="fade-up mt-14 text-xs font-semibold uppercase tracking-widest text-[#132420]/35" style="animation-delay: .15s">Teams we've helped</p>
-            <div class="fade-up mt-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-[#132420]/40" style="animation-delay: .2s">
-                <span class="font-display text-lg font-bold">Harborline</span>
-                <span class="text-lg font-semibold italic">Bloomfield</span>
-                <span class="text-lg font-black uppercase tracking-widest">Restio</span>
-                <span class="font-display text-lg font-bold">grovebank</span>
-                <span class="text-lg font-semibold tracking-tight">Palmer&nbsp;&amp;&nbsp;Quill</span>
+    <!-- ============ Logo cloud ============ -->
+    <section class="py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-6">
+            <p class="text-center text-sm font-medium text-[#0f231d]/40">We've partnered with</p>
+            <div class="mt-8 grid grid-cols-3 items-center justify-items-center gap-8 sm:grid-cols-6">
+                <img src="https://assets.ui.sh/logos/align.svg?color=%230f231d" alt="Align" class="h-6 w-auto opacity-40">
+                <img src="https://assets.ui.sh/logos/artifact.svg?color=%230f231d" alt="Artifact" class="h-6 w-auto opacity-40">
+                <img src="https://assets.ui.sh/logos/axiom.svg?color=%230f231d" alt="Axiom" class="h-6 w-auto opacity-40">
+                <img src="https://assets.ui.sh/logos/looply.svg?color=%230f231d" alt="Looply" class="h-6 w-auto opacity-40">
+                <img src="https://assets.ui.sh/logos/orbital.svg?color=%230f231d" alt="Orbital" class="h-6 w-auto opacity-40">
+                <img src="https://assets.ui.sh/logos/relay.svg?color=%230f231d" alt="Relay" class="h-6 w-auto opacity-40">
             </div>
         </div>
     </section>
 
     <!-- ============ Services ============ -->
-    <!-- Four numbered cards from collections/services.json — the loop counter drives the 01–04 pills. -->
-    <section id="services" class="mx-auto max-w-6xl px-6 py-24">
-        <div class="max-w-2xl">
-            <p class="eyebrow">What we do</p>
-            <h2 class="font-display mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">Small steps, compounding returns</h2>
-        </div>
+    <!-- Four numbered cards from collections/services.json — the loop counter drives the 01–04 labels. -->
+    <section id="services" class="py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div>
+                <p class="eyebrow">What we do</p>
+                <h2 class="font-display mt-3 max-w-[30ch] text-balance text-5xl tracking-tight">Small steps, compounding returns</h2>
+                <p class="mt-5 max-w-[48ch] text-pretty text-lg text-[#0f231d]/60">Four engagements, each sized to prove its value before you scale it.</p>
+            </div>
 
-        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            @foreach ($services as $service)
-                <div class="rounded-2xl border border-[#132420]/8 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                    <span class="inline-flex rounded-full bg-teal-50 px-3 py-1 text-xs font-bold text-[#0d9488]">0{{ $loop->iteration }}</span>
-                    <h3 class="font-display mt-5 text-xl font-bold">{{ $service->title }}</h3>
-                    <p class="mt-2.5 text-sm leading-relaxed text-[#132420]/60">{{ $service->description }}</p>
-                </div>
-            @endforeach
+            <dl class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                @foreach ($services as $service)
+                    <div class="rounded-2xl bg-[#f3f7f4] p-8">
+                        <p class="text-sm font-medium text-[#35705a] tabular-nums">0{{ $loop->iteration }}</p>
+                        <dt class="mt-8 text-lg font-semibold">{{ $service->title }}</dt>
+                        <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">{{ $service->description }}</dd>
+                    </div>
+                @endforeach
+            </dl>
         </div>
     </section>
 
     <!-- ============ Big stats ============ -->
-    <section class="border-y border-[#132420]/5 bg-white">
-        <div class="mx-auto max-w-6xl px-6 py-20">
-            <div class="grid gap-12 text-center sm:grid-cols-3">
-                <div>
-                    <p class="font-display text-6xl font-extrabold tracking-tight text-[#0d9488] sm:text-7xl">920</p>
-                    <p class="mt-3 text-sm font-medium text-[#132420]/50">hours handed back to client teams, every month</p>
+    <section class="bg-[#f3f7f4]">
+        <div class="mx-auto max-w-7xl px-6 py-24">
+            <div>
+                <p class="eyebrow">Results</p>
+                <h2 class="font-display mt-3 max-w-[30ch] text-balance text-5xl tracking-tight">Numbers we're happy to be held to</h2>
+            </div>
+
+            <div class="mt-14 grid sm:grid-cols-3">
+                <div class="pb-10 sm:pr-8 sm:pb-0">
+                    <p class="font-display text-6xl tracking-tight text-[#1e4038] tabular-nums sm:text-7xl">920</p>
+                    <p class="mt-4 max-w-[40ch] text-base/7 text-[#0f231d]/60 sm:text-sm/6">hours handed back to client teams, every month</p>
                 </div>
-                <div>
-                    <p class="font-display text-6xl font-extrabold tracking-tight text-[#0d9488] sm:text-7xl">-38%</p>
-                    <p class="mt-3 text-sm font-medium text-[#132420]/50">average first-response time across support pilots</p>
+                <div class="border-t border-[#0f231d]/10 py-10 sm:border-t-0 sm:border-l sm:px-8 sm:py-0">
+                    <p class="font-display text-6xl tracking-tight text-[#1e4038] tabular-nums sm:text-7xl">-38%</p>
+                    <p class="mt-4 max-w-[40ch] text-base/7 text-[#0f231d]/60 sm:text-sm/6">average first-response time across support pilots</p>
                 </div>
-                <div>
-                    <p class="font-display text-6xl font-extrabold tracking-tight text-[#0d9488] sm:text-7xl">6 wks</p>
-                    <p class="mt-3 text-sm font-medium text-[#132420]/50">typical time from kickoff to a paid-for pilot</p>
+                <div class="border-t border-[#0f231d]/10 pt-10 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-8">
+                    <p class="font-display text-6xl tracking-tight text-[#1e4038] tabular-nums sm:text-7xl">6 wks</p>
+                    <p class="mt-4 max-w-[40ch] text-base/7 text-[#0f231d]/60 sm:text-sm/6">typical time from kickoff to a paid-for pilot</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============ Featured quote ============ -->
-    <section class="mx-auto max-w-4xl px-6 py-20">
-        <figure class="rounded-3xl border border-[#132420]/8 bg-white p-10 text-center shadow-sm sm:p-14">
-            <blockquote class="font-display text-2xl font-medium leading-snug tracking-tight sm:text-3xl">
-                &ldquo;We'd been burned by two AI vendors before Lumen. The difference was
-                the baseline: they measured everything, promised little, and beat the
-                numbers anyway.&rdquo;
-            </blockquote>
-            <figcaption class="mt-8 text-sm text-[#132420]/50">
-                <span class="font-bold text-[#132420]">Renata Kovács</span> &middot; Director of Support, Harborline
-            </figcaption>
-        </figure>
+    <section class="py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6">
+            <figure class="text-center">
+                <blockquote class="font-display relative mx-auto max-w-[40ch] text-balance text-3xl tracking-tight before:absolute before:inline before:-translate-x-full before:content-['\201C'] after:inline after:content-['\201D'] sm:text-4xl">We'd been burned by two AI vendors before Lumen. The difference was the baseline: they measured everything, promised little, and beat the numbers anyway.</blockquote>
+                <figcaption class="mt-10 flex flex-col items-center gap-3">
+                    <img src="https://assets.ui.sh/avatars/9.webp" alt="" class="size-12 rounded-full outline-1 -outline-offset-1 outline-black/10">
+                    <div class="text-sm">
+                        <p class="font-semibold">Robin Meyer</p>
+                        <p class="mt-0.5 text-[#0f231d]/50">Director of Support, Harborline</p>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
     <!-- ============ Process ============ -->
     <!-- Three steps from collections/steps.json, on a simple week-by-week rail. -->
-    <section id="process" class="border-t border-[#132420]/5 bg-white">
-        <div class="mx-auto max-w-6xl px-6 py-24">
-            <div class="max-w-2xl">
+    <section id="process" class="border-t border-[#0f231d]/5 py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div>
                 <p class="eyebrow">How it works</p>
-                <h2 class="font-display mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">Six weeks, three honest steps</h2>
+                <h2 class="font-display mt-3 max-w-[30ch] text-balance text-5xl tracking-tight">Six weeks, three honest steps</h2>
             </div>
 
-            <div class="mt-12 grid gap-5 md:grid-cols-3">
+            <dl class="mt-14 grid gap-8 md:grid-cols-3">
                 @foreach ($steps as $step)
-                    <div class="relative rounded-2xl bg-[#fbfcfb] p-8 ring-1 ring-[#132420]/8">
-                        <div class="flex items-center gap-3">
-                            <span class="grid h-9 w-9 place-items-center rounded-full bg-[#0d9488] font-display text-sm font-bold text-white">0{{ $loop->iteration }}</span>
-                            <span class="rounded-full bg-teal-50 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-[#0d9488]">{{ $step->week }}</span>
+                    <div class="border-t border-[#0f231d]/10 pt-8">
+                        <div class="flex items-baseline justify-between gap-4">
+                            <p class="font-display text-4xl text-[#1e4038]/30 tabular-nums">0{{ $loop->iteration }}</p>
+                            <p class="text-sm font-medium text-[#35705a]">{{ $step->week }}</p>
                         </div>
-                        <h3 class="font-display mt-5 text-lg font-bold">{{ $step->title }}</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-[#132420]/60">{{ $step->description }}</p>
+                        <dt class="mt-6 text-lg font-semibold">{{ $step->title }}</dt>
+                        <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">{{ $step->description }}</dd>
                     </div>
                 @endforeach
-            </div>
+            </dl>
         </div>
     </section>
 
     <!-- ============ Case study spotlight ============ -->
-    <section id="results" class="mx-auto max-w-6xl px-6 py-24">
-        <div class="overflow-hidden rounded-3xl bg-[#132420]">
-            <div class="grid lg:grid-cols-2">
-                <div class="p-10 sm:p-14">
-                    <p class="text-xs font-bold uppercase tracking-[0.16em] text-teal-300">Case study &middot; Harborline</p>
-                    <h2 class="font-display mt-4 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl">A support team that stopped drowning</h2>
-                    <div class="mt-6 flex flex-col gap-4 text-sm leading-relaxed text-teal-100/70">
-                        <p>
-                            <span class="font-bold text-white">The problem.</span> A 14-person support team
-                            answering 9,000 tickets a month, with weekend backlogs regularly
-                            topping 600 and CSAT slipping quarter over quarter.
-                        </p>
-                        <p>
-                            <span class="font-bold text-white">The pilot.</span> An assistant that drafts replies
-                            for the 20 most common ticket types, grounded in Harborline's own
-                            help center — with every draft reviewed by an agent before sending.
-                        </p>
-                        <p>
-                            <span class="font-bold text-white">The result.</span> Six months later the same team
-                            handles 40% more volume, weekends clear by Saturday noon, and the
-                            two agents who hated ticket triage now run the knowledge base.
-                        </p>
+    <section id="results" class="py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="overflow-hidden rounded-4xl bg-[#1e4038]">
+                <div class="grid lg:grid-cols-2">
+                    <div class="p-8 sm:p-14">
+                        <p class="text-sm font-medium text-[#a3c4b1]">Case study — Harborline</p>
+                        <h2 class="font-display mt-4 max-w-[30ch] text-balance text-5xl tracking-tight text-white">A support team that stopped drowning</h2>
+                        <div class="mt-8 flex flex-col gap-5 text-base/7 text-pretty text-white/70 sm:text-sm/6">
+                            <p>
+                                <span class="font-semibold text-white">The problem.</span> A 14-person support team
+                                answering 9,000 tickets a month, with weekend backlogs regularly
+                                topping 600 and CSAT slipping quarter over quarter.
+                            </p>
+                            <p>
+                                <span class="font-semibold text-white">The pilot.</span> An assistant that drafts replies
+                                for the 20 most common ticket types, grounded in Harborline's own
+                                help center — with every draft reviewed by an agent before sending.
+                            </p>
+                            <p>
+                                <span class="font-semibold text-white">The result.</span> Six months later the same team
+                                handles 40% more volume, weekends clear by Saturday noon, and the
+                                two agents who hated ticket triage now run the knowledge base.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="grid content-center gap-4 border-t border-white/10 p-10 sm:grid-cols-2 sm:p-14 lg:border-l lg:border-t-0">
-                    <div class="rounded-2xl bg-white/5 p-6">
-                        <p class="font-display text-4xl font-extrabold tracking-tight text-teal-300">-61%</p>
-                        <p class="mt-2 text-xs text-teal-100/60">first-response time</p>
-                    </div>
-                    <div class="rounded-2xl bg-white/5 p-6">
-                        <p class="font-display text-4xl font-extrabold tracking-tight text-teal-300">+40%</p>
-                        <p class="mt-2 text-xs text-teal-100/60">ticket volume, same headcount</p>
-                    </div>
-                    <div class="rounded-2xl bg-white/5 p-6">
-                        <p class="font-display text-4xl font-extrabold tracking-tight text-teal-300">4.8</p>
-                        <p class="mt-2 text-xs text-teal-100/60">CSAT, up from 4.1</p>
-                    </div>
-                    <div class="rounded-2xl bg-white/5 p-6">
-                        <p class="font-display text-4xl font-extrabold tracking-tight text-teal-300">9 wks</p>
-                        <p class="mt-2 text-xs text-teal-100/60">to full payback</p>
+                    <div class="grid content-center gap-4 border-t border-white/10 p-8 sm:grid-cols-2 sm:p-14 lg:border-t-0 lg:border-l">
+                        <div class="rounded-2xl bg-white/5 p-6 inset-ring inset-ring-white/10">
+                            <p class="font-display text-5xl tracking-tight text-white tabular-nums">-61%</p>
+                            <p class="mt-3 text-base/7 text-white/60 sm:text-sm/6">first-response time</p>
+                        </div>
+                        <div class="rounded-2xl bg-white/5 p-6 inset-ring inset-ring-white/10">
+                            <p class="font-display text-5xl tracking-tight text-white tabular-nums">+40%</p>
+                            <p class="mt-3 text-base/7 text-white/60 sm:text-sm/6">ticket volume, same headcount</p>
+                        </div>
+                        <div class="rounded-2xl bg-white/5 p-6 inset-ring inset-ring-white/10">
+                            <p class="font-display text-5xl tracking-tight text-white tabular-nums">4.8</p>
+                            <p class="mt-3 text-base/7 text-white/60 sm:text-sm/6">CSAT, up from 4.1</p>
+                        </div>
+                        <div class="rounded-2xl bg-white/5 p-6 inset-ring inset-ring-white/10">
+                            <p class="font-display text-5xl tracking-tight text-white tabular-nums">9 wks</p>
+                            <p class="mt-3 text-base/7 text-white/60 sm:text-sm/6">to full payback</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,45 +210,52 @@
 
     <!-- ============ Team ============ -->
     <!-- Loops over collections/team.json. -->
-    <section class="border-t border-[#132420]/5 bg-white">
-        <div class="mx-auto max-w-6xl px-6 py-24">
-            <div class="max-w-2xl">
+    <section class="py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div>
                 <p class="eyebrow">The people</p>
-                <h2 class="font-display mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">Four people, no account managers</h2>
+                <h2 class="font-display mt-3 max-w-[30ch] text-balance text-5xl tracking-tight">Four people, no account managers</h2>
             </div>
 
-            <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <ul role="list" class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 @foreach ($team as $member)
-                    <div class="group rounded-2xl border border-[#132420]/8 bg-[#fbfcfb] p-6 transition hover:-translate-y-1 hover:shadow-md">
-                        <!-- Portrait, tinted by the collection's color fields — swap in your own photos. -->
-                        <div class="relative h-28 overflow-hidden rounded-xl">
-                            <img src="{{ $member->image }}" alt="{{ $member->alt }}" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
-                            <span class="absolute inset-0 mix-blend-multiply opacity-25" style="background: linear-gradient(150deg, {{ $member->color_from }}, {{ $member->color_to }})"></span>
-                        </div>
-                        <h3 class="font-display mt-4 font-bold">{{ $member->name }}</h3>
-                        <p class="mt-1 text-xs text-[#132420]/50">{{ $member->role }}</p>
-                    </div>
+                    <li>
+                        <img src="{{ $member->image }}" alt="" class="aspect-4/5 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5" loading="lazy">
+                        <h3 class="mt-5 text-base font-semibold">{{ $member->name }}</h3>
+                        <p class="mt-1 text-sm text-[#0f231d]/50">{{ $member->role }}</p>
+                    </li>
                 @endforeach
-            </div>
+            </ul>
         </div>
     </section>
 
     <!-- ============ FAQ ============ -->
     <!-- Native details/summary accordion — no JavaScript required. -->
-    <section class="mx-auto max-w-3xl px-6 py-24">
-        <p class="eyebrow text-center">FAQ</p>
-        <h2 class="font-display mt-3 text-balance text-center text-3xl font-bold tracking-tight sm:text-4xl">Asked every week</h2>
+    <section class="border-t border-[#0f231d]/5 py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div>
+                    <p class="eyebrow">FAQ</p>
+                    <h2 class="font-display mt-3 max-w-[30ch] text-balance text-5xl tracking-tight">Asked every week</h2>
+                    <p class="mt-5 max-w-[40ch] text-pretty text-lg text-[#0f231d]/60">Straight answers to the questions every client asks before working with us.</p>
+                </div>
 
-        <div class="mt-12 flex flex-col gap-3">
-            @foreach ($faq as $item)
-                <details class="faq rounded-2xl border border-[#132420]/8 bg-white px-6 py-5 shadow-sm open:border-[#0d9488]/40">
-                    <summary class="flex items-center justify-between gap-4 text-sm font-semibold">
-                        {{ $item->question }}
-                        <span class="faq-icon flex h-7 w-7 flex-none items-center justify-center rounded-full bg-teal-50 text-base text-[#0d9488]">+</span>
-                    </summary>
-                    <p class="mt-4 max-w-xl text-sm leading-relaxed text-[#132420]/60">{{ $item->answer }}</p>
-                </details>
-            @endforeach
+                <div class="lg:col-span-2">
+                    <div class="flex flex-col divide-y divide-[#0f231d]/10 border-y border-[#0f231d]/10">
+                        @foreach ($faq as $item)
+                            <details class="faq group py-6">
+                                <summary class="flex items-center justify-between gap-4 text-base font-medium">
+                                    {{ $item->question }}
+                                    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="faq-icon size-4 shrink-0 text-[#35705a]">
+                                        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"/>
+                                    </svg>
+                                </summary>
+                                <p class="mt-4 max-w-[64ch] text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">{{ $item->answer }}</p>
+                            </details>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
