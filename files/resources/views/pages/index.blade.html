@@ -7,7 +7,7 @@
     <section class="px-6 pb-6">
         <!-- On large screens the band fills the viewport below the header (~5.5rem) minus the frame's bottom gutter. -->
         <div class="fade-up flex flex-col overflow-hidden rounded-2xl bg-[#1e4038] lg:min-h-[calc(100svh-7rem)]">
-            <div class="mx-auto grid w-full max-w-7xl flex-1 gap-8 px-6 lg:grid-cols-2">
+            <div class="mx-auto grid w-full max-w-7xl flex-1 gap-8 px-10 lg:grid-cols-2">
                 <div class="flex flex-col justify-center pt-14 sm:pt-16 lg:py-16 lg:pr-4">
                     <div class="flex items-center gap-3">
                         <div class="flex items-center gap-1">
@@ -54,7 +54,7 @@
 
                 <!-- Two-column image marquee — each column holds two identical groups, so sliding one group's height (50%) loops seamlessly. The left column drifts up, the right drifts down a touch slower. -->
                 <div class="relative min-h-80 sm:min-h-96 lg:min-h-[30rem]">
-                    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+                    <div class="absolute inset-0" aria-hidden="true">
                         <div class="grid h-full grid-cols-2 gap-5">
                             <div class="animate-marquee-up flex flex-col motion-reduce:animate-none">
                                 <div class="flex flex-col gap-5 pb-5">
@@ -91,7 +91,7 @@
 
             <!-- ============ Logo marquee ============ -->
             <!-- The track holds two identical logo groups, so sliding one group's width (-50%) loops seamlessly. -->
-            <div class="border-t border-white/10">
+            <div class="border-t border-white/10 relative z-50 bg-[#1e4038]/85 backdrop-blur-2xl">
                 <div class="mx-auto flex w-full max-w-7xl flex-col gap-x-10 gap-y-6 px-6 py-8 sm:flex-row sm:items-center">
                     <p class="shrink-0 text-sm font-medium text-white/50">We've partnered with</p>
                     <div class="min-w-0 flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
