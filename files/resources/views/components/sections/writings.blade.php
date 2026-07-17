@@ -23,7 +23,7 @@
     <!--
         Numbered editorial rows on the same rail the homepage process uses.
         Loops over collections/writings.json. Each writing is a real page under
-        pages/writings/{slug}.blade.html — add one there, then add its row here.
+        pages/writings/{slug}.blade.php — add one there, then add its row here.
     -->
     <section class="pb-24 sm:pb-32">
         <div class="mx-auto max-w-3xl px-6">
