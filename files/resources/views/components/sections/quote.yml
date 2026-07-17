@@ -1,0 +1,19 @@
+title: Quote
+description: The centered featured testimonial with avatar and attribution
+fields:
+    quote:
+        type: textarea
+        label: Quote
+        default: "We'd been burned by two AI vendors before Lumen. The difference was the baseline: they measured everything, promised little, and beat the numbers anyway."
+    avatar:
+        type: image
+        label: Avatar
+        default: "https://assets.ui.sh/avatars/9.webp"
+    name:
+        type: text
+        label: Name
+        default: "Robin Meyer"
+    role:
+        type: text
+        label: Role
+        default: "Director of Support, Harborline"

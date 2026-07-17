@@ -1,0 +1,24 @@
+title: About header
+description: The About page opener — eyebrow, headline with italic accent, and intro copy
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "About"
+    headingStart:
+        type: text
+        label: Heading
+        default: "We're the calm ones in a"
+    headingAccent:
+        type: text
+        label: Heading accent
+        description: Rendered in italics inside the heading.
+        default: "loud"
+    headingEnd:
+        type: text
+        label: Heading ending
+        default: "industry"
+    body:
+        type: textarea
+        label: Intro copy
+        default: "Lumen started in 2025 after our founder spent a year watching her support team demo tools that promised everything and shipped confusion. We do the opposite: small pilots, real baselines, honest math, and a hard rule that humans own the judgment calls."

@@ -1,0 +1,74 @@
+title: Hero
+description: The opening band — rating, headline, supporting copy, two actions, the photo marquee, and the partner-logo strip
+fields:
+    rating:
+        type: text
+        label: Rating line
+        description: The short line next to the five stars.
+        default: "Rated 4.9/5 by client teams"
+    headingStart:
+        type: text
+        label: Heading
+        default: "AI consulting that"
+    headingAccent:
+        type: text
+        label: Heading accent
+        description: Rendered in italics at the end of the heading.
+        default: "earns its keep"
+    body:
+        type: textarea
+        label: Supporting copy
+        default: "Lumen helps support and operations teams put AI to work — one measured pilot at a time. No moonshots, no jargon, and a human in the loop wherever it matters."
+    buttonText:
+        type: text
+        label: Primary button text
+        default: "Book a call"
+    buttonLink:
+        type: url
+        label: Primary button link
+        default: "mailto:hello@example.com"
+    secondaryText:
+        type: text
+        label: Secondary link text
+        default: "See how it works"
+    secondaryLink:
+        type: url
+        label: Secondary link
+        default: "#process"
+    photoOne:
+        type: image
+        label: Marquee photo 1 (left column)
+        default: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop"
+    photoTwo:
+        type: image
+        label: Marquee photo 2 (left column)
+        default: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop"
+    photoThree:
+        type: image
+        label: Marquee photo 3 (left column)
+        default: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop"
+    photoFour:
+        type: image
+        label: Marquee photo 4 (left column)
+        default: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop"
+    photoFive:
+        type: image
+        label: Marquee photo 5 (right column)
+        default: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=800&auto=format&fit=crop"
+    photoSix:
+        type: image
+        label: Marquee photo 6 (right column)
+        default: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=800&auto=format&fit=crop"
+    photoSeven:
+        type: image
+        label: Marquee photo 7 (right column)
+        default: "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?q=80&w=800&auto=format&fit=crop"
+    photoEight:
+        type: image
+        label: Marquee photo 8 (right column)
+        default: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop"
+    partnersLabel:
+        type: text
+        label: Partners line
+        description: The short label before the scrolling partner logos.
+        default: "We've partnered with"

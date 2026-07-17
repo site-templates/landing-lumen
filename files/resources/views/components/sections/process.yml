@@ -1,0 +1,11 @@
+title: Process
+description: The three-step week-by-week rail from collections/steps.json
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "How it works"
+    heading:
+        type: text
+        label: Heading
+        default: "Six weeks, three honest steps"

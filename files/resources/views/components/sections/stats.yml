@@ -1,0 +1,35 @@
+title: Stats
+description: The gray band with three big numbers and their labels
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Results"
+    heading:
+        type: text
+        label: Heading
+        default: "Numbers we're happy to be held to"
+    statOneValue:
+        type: text
+        label: Stat 1 — value
+        default: "920"
+    statOneLabel:
+        type: text
+        label: Stat 1 — label
+        default: "hours handed back to client teams, every month"
+    statTwoValue:
+        type: text
+        label: Stat 2 — value
+        default: "-38%"
+    statTwoLabel:
+        type: text
+        label: Stat 2 — label
+        default: "average first-response time across support pilots"
+    statThreeValue:
+        type: text
+        label: Stat 3 — value
+        default: "6 wks"
+    statThreeLabel:
+        type: text
+        label: Stat 3 — label
+        default: "typical time from kickoff to a paid-for pilot"

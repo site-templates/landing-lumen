@@ -1,0 +1,15 @@
+title: FAQ
+description: The accordion of questions from collections/faq.json, with an intro column
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "FAQ"
+    heading:
+        type: text
+        label: Heading
+        default: "Asked every week"
+    body:
+        type: textarea
+        label: Intro copy
+        default: "Straight answers to the questions every client asks before working with us."

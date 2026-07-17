@@ -1,0 +1,11 @@
+title: Team
+description: The people grid from collections/team.json, with an eyebrow and heading
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "The people"
+    heading:
+        type: text
+        label: Heading
+        default: "Four people, no account managers"

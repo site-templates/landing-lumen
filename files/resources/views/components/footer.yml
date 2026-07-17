@@ -1,0 +1,40 @@
+title: Footer
+description: The closing CTA band and the site-wide footer — appears on every page that uses the layout
+fields:
+    headingStart:
+        type: text
+        label: CTA heading
+        default: "Thirty minutes. Your workflows."
+    headingAccent:
+        type: text
+        label: CTA heading accent
+        description: Rendered in italics inside the heading.
+        default: "Honest"
+    headingEnd:
+        type: text
+        label: CTA heading ending
+        default: "advice."
+    body:
+        type: textarea
+        label: CTA copy
+        default: "If AI isn't the right answer for your team yet, we'll say so — and tell you what to do instead."
+    ctaText:
+        type: text
+        label: CTA button text
+        default: "Book your call"
+    ctaLink:
+        type: url
+        label: CTA button link
+        default: "mailto:hello@example.com"
+    copyright:
+        type: text
+        label: Copyright line
+        default: "© 2026"
+    contactText:
+        type: text
+        label: Contact link text
+        default: "hello@example.com"
+    contactLink:
+        type: url
+        label: Contact link
+        default: "mailto:hello@example.com"

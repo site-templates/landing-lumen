@@ -1,62 +1,12 @@
 <!-- About — served at "/about". -->
 <x-layouts.main title="About" description="Lumen is a four-person studio helping real teams adopt AI with honest math, small pilots, and humans in the loop.">
 
-    <section class="relative overflow-hidden">
-        <div class="hero-wash pointer-events-none absolute inset-0"></div>
-        <div class="relative mx-auto max-w-7xl px-6 pt-24 pb-16 sm:pt-32">
-            <p class="fade-up eyebrow">About</p>
-            <h1 class="fade-up font-display mt-4 max-w-[24ch] text-balance text-5xl tracking-tight [animation-delay:50ms] sm:text-6xl">
-                We're the calm ones in a <span class="italic">loud</span> industry
-            </h1>
-            <p class="fade-up mt-6 max-w-[56ch] text-pretty text-lg text-[#0f231d]/60 [animation-delay:100ms]">
-                Lumen started in 2025 after our founder spent a year watching her
-                support team demo tools that promised everything and shipped
-                confusion. We do the opposite: small pilots, real baselines, honest
-                math, and a hard rule that humans own the judgment calls.
-            </p>
-        </div>
-    </section>
+    <x-sections.about-header />
 
     <!-- ============ Beliefs ============ -->
-    <section class="py-16">
-        <div class="mx-auto max-w-7xl px-6">
-            <dl class="grid gap-8 md:grid-cols-3">
-                <div class="rounded-2xl bg-[#f3f7f4] p-8">
-                    <p class="text-sm font-medium text-[#35705a] tabular-nums">01</p>
-                    <dt class="mt-8 text-lg font-semibold">Measure before you automate</dt>
-                    <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">If you can't say what "better" means in numbers, you're not ready to buy AI — and we'll help you get ready instead of selling you some.</dd>
-                </div>
-                <div class="rounded-2xl bg-[#f3f7f4] p-8">
-                    <p class="text-sm font-medium text-[#35705a] tabular-nums">02</p>
-                    <dt class="mt-8 text-lg font-semibold">People keep the judgment</dt>
-                    <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">Assistants draft, summarize, and route. Humans decide. Every deployment ships with clear escalation paths and a visible off switch.</dd>
-                </div>
-                <div class="rounded-2xl bg-[#f3f7f4] p-8">
-                    <p class="text-sm font-medium text-[#35705a] tabular-nums">03</p>
-                    <dt class="mt-8 text-lg font-semibold">Leave teams stronger</dt>
-                    <dd class="mt-2 text-base/7 text-pretty text-[#0f231d]/60 sm:text-sm/6">Success is your team running the system without us. Documentation and training aren't add-ons; they're the deliverable.</dd>
-                </div>
-            </dl>
-        </div>
-    </section>
+    <x-sections.beliefs />
 
     <!-- ============ Team ============ -->
-    <section class="py-24">
-        <div class="mx-auto max-w-7xl px-6">
-            <div>
-                <p class="eyebrow">The team</p>
-                <h2 class="font-display mt-3 max-w-[30ch] text-balance text-5xl tracking-tight">The four of us</h2>
-            </div>
-            <ul role="list" class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                @foreach ($team as $member)
-                    <li>
-                        <img src="{{ $member->image }}" alt="" class="aspect-4/5 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5" loading="lazy">
-                        <h3 class="mt-5 text-base font-semibold">{{ $member->name }}</h3>
-                        <p class="mt-1 text-sm text-[#0f231d]/50">{{ $member->role }}</p>
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-    </section>
+    <x-sections.team eyebrow="The team" heading="The four of us" :items="$team" />
 
 </x-layouts.main>

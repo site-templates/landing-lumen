@@ -1,0 +1,24 @@
+title: Writings
+description: The Writings page opener and the editorial list from collections/writings.json
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "Writings"
+    headingStart:
+        type: text
+        label: Heading
+        default: "Lessons the"
+    headingAccent:
+        type: text
+        label: Heading accent
+        description: Rendered in italics inside the heading.
+        default: "pilots"
+    headingEnd:
+        type: text
+        label: Heading ending
+        default: "keep teaching us"
+    body:
+        type: textarea
+        label: Intro copy
+        default: "What we learn running measured AI pilots for real teams — written down plainly, numbers included."

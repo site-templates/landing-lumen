@@ -1,0 +1,27 @@
+title: Beliefs
+description: Three numbered belief cards on the About page
+fields:
+    cardOneTitle:
+        type: text
+        label: Card 1 — title
+        default: "Measure before you automate"
+    cardOneBody:
+        type: textarea
+        label: Card 1 — copy
+        default: "If you can't say what \"better\" means in numbers, you're not ready to buy AI — and we'll help you get ready instead of selling you some."
+    cardTwoTitle:
+        type: text
+        label: Card 2 — title
+        default: "People keep the judgment"
+    cardTwoBody:
+        type: textarea
+        label: Card 2 — copy
+        default: "Assistants draft, summarize, and route. Humans decide. Every deployment ships with clear escalation paths and a visible off switch."
+    cardThreeTitle:
+        type: text
+        label: Card 3 — title
+        default: "Leave teams stronger"
+    cardThreeBody:
+        type: textarea
+        label: Card 3 — copy
+        default: "Success is your team running the system without us. Documentation and training aren't add-ons; they're the deliverable."

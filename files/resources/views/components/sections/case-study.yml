@@ -1,0 +1,67 @@
+title: Case study
+description: The deep-green spotlight — problem, pilot, result, and four stat cards
+fields:
+    kicker:
+        type: text
+        label: Kicker
+        default: "Case study — Harborline"
+    heading:
+        type: text
+        label: Heading
+        default: "A support team that stopped drowning"
+    problemLabel:
+        type: text
+        label: Paragraph 1 — lead-in
+        default: "The problem."
+    problemBody:
+        type: textarea
+        label: Paragraph 1 — copy
+        default: "A 14-person support team answering 9,000 tickets a month, with weekend backlogs regularly topping 600 and CSAT slipping quarter over quarter."
+    pilotLabel:
+        type: text
+        label: Paragraph 2 — lead-in
+        default: "The pilot."
+    pilotBody:
+        type: textarea
+        label: Paragraph 2 — copy
+        default: "An assistant that drafts replies for the 20 most common ticket types, grounded in Harborline's own help center — with every draft reviewed by an agent before sending."
+    resultLabel:
+        type: text
+        label: Paragraph 3 — lead-in
+        default: "The result."
+    resultBody:
+        type: textarea
+        label: Paragraph 3 — copy
+        default: "Six months later the same team handles 40% more volume, weekends clear by Saturday noon, and the two agents who hated ticket triage now run the knowledge base."
+    statOneValue:
+        type: text
+        label: Stat 1 — value
+        default: "-61%"
+    statOneLabel:
+        type: text
+        label: Stat 1 — label
+        default: "first-response time"
+    statTwoValue:
+        type: text
+        label: Stat 2 — value
+        default: "+40%"
+    statTwoLabel:
+        type: text
+        label: Stat 2 — label
+        default: "ticket volume, same headcount"
+    statThreeValue:
+        type: text
+        label: Stat 3 — value
+        default: "4.8"
+    statThreeLabel:
+        type: text
+        label: Stat 3 — label
+        default: "CSAT, up from 4.1"
+    statFourValue:
+        type: text
+        label: Stat 4 — value
+        default: "9 wks"
+    statFourLabel:
+        type: text
+        label: Stat 4 — label
+        default: "to full payback"

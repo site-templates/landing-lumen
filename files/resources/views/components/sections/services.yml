@@ -1,0 +1,15 @@
+title: Services
+description: Four numbered engagement cards from collections/services.json, with an intro
+fields:
+    eyebrow:
+        type: text
+        label: Eyebrow
+        default: "What we do"
+    heading:
+        type: text
+        label: Heading
+        default: "Small steps, compounding returns"
+    body:
+        type: textarea
+        label: Intro copy
+        default: "Four engagements, each sized to prove its value before you scale it."
